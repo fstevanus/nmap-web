@@ -313,6 +313,8 @@
     return [];
   }
 
+  // Helper currently unreferenced; kept as a target-formatting utility.
+  // eslint-disable-next-line no-unused-vars
   function targetPreview(targets, max) {
     const tokens = parseTargets(targets);
     if (!tokens.length) return '—';
@@ -2066,6 +2068,8 @@
       '</button>';
   }
 
+  // Reads state.hosts; the scan argument is retained for API symmetry.
+  // eslint-disable-next-line no-unused-vars
   function hostsSection(scan) {
     if (!state.hosts.length) {
       return '<section class="hosts-section"><div class="card empty-card">' +

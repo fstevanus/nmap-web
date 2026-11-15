@@ -4,6 +4,7 @@
   "description": "Full-featured nmap web UI — run scans from your browser, with live progress, parsed results and history. Containerized with Docker/Podman.",
   "type": "module",
   "license": "MIT",
+  "author": "fstevanus <dracbros@gmail.com>",
   "keywords": [
     "nmap",
     "network-scanner",
@@ -20,15 +21,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/nmap-web.git"
+    "url": "git+https://github.com/fstevanus/nmap-web.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/nmap-web/issues"
+    "url": "https://github.com/fstevanus/nmap-web/issues"
   },
-  "homepage": "https://github.com/your-username/nmap-web#readme",
+  "homepage": "https://github.com/fstevanus/nmap-web#readme",
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "node --test test/unit/ && node test/frontend-harness.cjs",
     "test:unit": "node --test --test-timeout=60000 test/unit/args.test.js test/unit/parse.test.js test/unit/store.test.js test/unit/scanner.test.js test/unit/server.test.js",
     "test:frontend": "node test/frontend-harness.cjs"
@@ -36,5 +39,10 @@
   "dependencies": {
     "fast-xml-parser": "^5.2.0",
     "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
   }
 }

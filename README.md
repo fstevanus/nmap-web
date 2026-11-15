@@ -9,9 +9,9 @@ Beautiful dark UI, live scan progress, parsed results, scan history.
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![Docker Pulls](https://img.shields.io/docker/pulls/fstevanus/nmap-web)
 ![Docker Image Size](https://img.shields.io/docker/image-size/fstevanus/nmap-web/latest)
-![CI](https://github.com/fstevanus/nmap-tui/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/fstevanus/nmap-web/actions/workflows/ci.yml/badge.svg)
 ![Node](https://img.shields.io/badge/node-%3E%3D20-339933)
-![Docker](https://img.shields.io/badge/docker-ghcr.io%2Ffstevanus%2Fnmap--tui-blue)
+![Docker](https://img.shields.io/badge/docker-ghcr.io%2Ffstevanus%2Fnmap--web-blue)
 
 ## Features
 
@@ -207,6 +207,12 @@ Each scan runs `nmap -oX -` (XML to stdout, parsed into structured results),
   with TLS and real auth.
 - There is deliberately no built-in "sudo" abstraction: the container runs as
   root because raw sockets need it.
+
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to get started, coding standards, and the development workflow.
+
+This project follows the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## License
 

@@ -51,6 +51,10 @@ binary. To exercise the real pipeline, run in Podman/Docker (see README).
   must go through `esc()` / `escAttr()`. The frontend harness will fail
   otherwise.
 
+## License of Contributions
+
+By submitting a pull request, you agree that your contributions will be licensed under the [MIT License](./LICENSE).
+
 ## Reporting security issues
 
 Please do not open public issues for vulnerabilities. Email the maintainer
