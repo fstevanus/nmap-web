@@ -48,7 +48,11 @@ const styleRules = {
   // (the `finalize`-once pattern is documented inline). This rule produces
   // false positives there and is no longer in `eslint:recommended` as of
   // ESLint 8; keep it off explicitly.
-  'require-atomic-updates': 'off'
+  'require-atomic-updates': 'off',
+  // ESLint 10's recommended config flags some intentional assignment patterns
+  // in existing code (e.g. pre-initialized vars before try/catch branches).
+  // Disable to avoid rewriting working logic for a stylistic rule.
+  'no-useless-assignment': 'off'
 };
 
 export default [
@@ -57,7 +61,7 @@ export default [
       'node_modules/**',
       'data/**',
       'coverage/**',
-      '*.cjs' // CommonJS test harnesses (e.g. test/frontend-harness.cjs)
+      '**/*.cjs' // CommonJS harnesses (e.g. test/frontend-harness.cjs)
     ]
   },
 

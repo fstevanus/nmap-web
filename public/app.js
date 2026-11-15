@@ -971,7 +971,7 @@
     const o = state.form.options;
     $$('[data-show-if]').forEach((el) => {
       const expr = el.getAttribute('data-show-if');
-      let visible = false;
+      let visible;
       if (expr.indexOf('=') !== -1) {
         const parts = expr.split('=');
         visible = String(getPath(o, parts[0])) === parts[1];
