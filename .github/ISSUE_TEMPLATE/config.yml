@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security issue
+    url: https://github.com/fstevanus/nmap-web/security/advisories/new
+    about: |
+      Reporting a security vulnerability? Please do NOT open a public issue.
+      Use GitHub's private vulnerability reporting (link above) or see
+      SECURITY.md for the full disclosure policy.

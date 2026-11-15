@@ -2,3 +2,17 @@ node_modules/
 data/
 *.log
 .DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+
+# Environment
+.env
+.env.local
