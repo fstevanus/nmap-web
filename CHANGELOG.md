@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 Dates follow [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) (`YYYY-MM-DD`).
 
+## [1.0.2] - 2026-11-15
+
+### Added
+- Open-source project documentation: `SECURITY.md`, `CODE_OF_CONDUCT.md` (Contributor Covenant v2.1), and this `CHANGELOG.md`.
+- GitHub issue templates (bug report, feature request) and issue template config.
+- ESLint flat config with CI lint step and `lint`/`lint:fix` scripts.
+
+### Changed
+- Expanded `CONTRIBUTING.md` with a license-of-contributions clause and updated `README.md` with contributing/CoC links and badge fixes.
+- Expanded `.gitignore` with common editor/OS/environment entries.
+
+### Fixed
+- Corrected `package.json` metadata (repository, bugs, homepage, author) and minor lint issues in source.
+
 ## [1.0.0] - 2026-11-14
 
 ### Added
@@ -23,5 +37,6 @@ Dates follow [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 
 - Binds to `127.0.0.1` (localhost) by default so the UI is reachable only from the local machine.
 - Optional bearer token auth (`NMAP_UI_TOKEN`) recommended whenever the bind address is changed to `0.0.0.0` or exposed beyond localhost.
 
-[Unreleased]: https://github.com/fstevanus/nmap-web/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/fstevanus/nmap-web/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/fstevanus/nmap-web/releases/tag/v1.0.2
 [1.0.0]: https://github.com/fstevanus/nmap-web/releases/tag/v1.0.0
