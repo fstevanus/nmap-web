@@ -93,7 +93,7 @@ test('missing nmap binary: exactly one error finalize, server-side state stays c
   const { events } = collectEvents(scanner, 'bad1');
   scanner.enqueue(record);
 
-  await waitFor(() => record.status === 'error');
+  await waitFor(() => record.status === 'error' && events.some((e) => e.type === 'error'));
   // spawn failure: clear, actionable message — not "could not be parsed"
   assert.match(record.error, /Failed to launch nmap/);
   // exactly one error event (old code double-finalized: duplicate events + ENOENT crash)
